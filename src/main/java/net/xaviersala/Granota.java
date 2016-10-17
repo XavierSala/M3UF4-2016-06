@@ -32,12 +32,12 @@ public class Granota {
      * @param imatge
      *
      */
-    public Granota(GImage imatge, int velocitat) {
+    public Granota(GImage imatge, boolean princesa, int velocitat) {
         super();
         this.imatge = imatge;
         this.velocitat = velocitat;
 
-        this.princesa = false;
+        this.princesa = princesa;
         if (imatge != null) {
             collocaGranota();
             canviaDireccio();
